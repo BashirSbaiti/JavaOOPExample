@@ -1,9 +1,8 @@
 
-public interface dynamicSizing<E> {
+public interface dynamicSizing<E> { // Interface only to be implemented by classes with dynamic sizing
+									// these methods don't make as much sense for classic arrays of a fixed size
 	
 	public void pushBack(E element);
-	
-	public E[] checkCapacity(E[] data); //TODO reconsider scope
 	
 	public int size();
 }
